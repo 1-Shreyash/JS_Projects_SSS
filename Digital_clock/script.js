@@ -26,20 +26,16 @@ function  name1 () {
   const slides6 = document.querySelectorAll(".b6")
   slides6.forEach(
       (b6,index) => {
-          b6.style.top = `${(index) * 100/3}%`
+          b6.style.top = `${index * 100}%`
       }
   )
   var counter6 = sec%10-1;
   const slideImage6 = () => {
     slides6.forEach(
         (b6) => {
-            b6.style.transform = `translateY(-${counter6 * 300/3}%)`;
-            b6.style.color = `rgb(104, 101, 101)`;
-            b6.style.fontSize = `50px`;
+            b6.style.transform = `translateY(-${counter6 * 100}%)`
         }
     )
-    slides6[(counter6+1)%11].style.color = `white`;
-    slides6[(counter6+1)%11].style.fontSize = `100px`;
   }
   const goNext6 = () => {
     if(counter6===9){
@@ -55,7 +51,7 @@ function  name1 () {
   // console.log(sec%10)
   slides5.forEach(
       (b5,index) => {//Setting positions
-          b5.style.top = `${(index) * 100/3}%`
+          b5.style.top = `${index * 100}%`
           // console.log(index ,sec)
       }
   )
@@ -64,12 +60,8 @@ function  name1 () {
     slides5.forEach(
         (b5) => {
             b5.style.transform = `translateY(-${counter5 * 100}%)`
-            b5.style.color = `rgb(104, 101, 101)`;
-            b5.style.fontSize = `50px`;
         }
     )
-    slides5[(counter5+1)%7].style.color = `white`;
-    slides5[(counter5+1)%7].style.fontSize = `100px`;
   }
   const goNext5 = () => {
     if(counter5===5){
@@ -85,7 +77,7 @@ function  name1 () {
   // console.log(sec%10)
   slides4.forEach(
       (b4,index) => {//Setting positions
-          b4.style.top = `${(index) * 100/3}%`
+          b4.style.top = `${index * 100}%`
           // console.log(index ,sec)
       }
   )
@@ -94,12 +86,8 @@ function  name1 () {
     slides4.forEach(
         (b4) => {
             b4.style.transform = `translateY(-${counter4 * 100}%)`
-            b4.style.color = `rgb(104, 101, 101)`;
-            b4.style.fontSize = `50px`;
         }
     )
-    slides4[(counter4+1)%11].style.color = `white`;
-    slides4[(counter4+1)%11].style.fontSize = `100px`;
   }
   const goNext4 = () => {
     if(counter4===9){
@@ -115,7 +103,7 @@ function  name1 () {
   // console.log(sec%10)
   slides3.forEach(
       (b3,index) => {//Setting positions
-          b3.style.top = `${(index) * 100/3}%`
+          b3.style.top = `${index * 100}%`
           // console.log(index ,sec)
       }
   )
@@ -124,12 +112,8 @@ function  name1 () {
     slides3.forEach(
         (b3) => {
             b3.style.transform = `translateY(-${counter3 * 100}%)`
-            b3.style.color = `rgb(104, 101, 101)`;
-            b3.style.fontSize = `50px`;
         }
     )
-    slides3[(counter3+1)%7].style.color = `white`;
-    slides3[(counter3+1)%7].style.fontSize = `100px`;
   }
   const goNext3 = () => {
     if(counter3===5){
@@ -145,7 +129,7 @@ function  name1 () {
   // console.log(sec%10)
   slides2.forEach(
       (b2,index) => {//Setting positions
-          b2.style.top = `${(index) * 100/3}%`
+          b2.style.top = `${index * 100}%`
           // console.log(index ,sec)
       }
   )
@@ -154,12 +138,8 @@ function  name1 () {
     slides2.forEach(
         (b2) => {
             b2.style.transform = `translateY(-${counter2 * 100}%)`
-            b2.style.color = `rgb(104, 101, 101)`;
-            b2.style.fontSize = `50px`;
         }
     )
-    slides2[(counter2+1)%11].style.color = `white`;
-    slides2[(counter2+1)%11].style.fontSize = `100px`;
   }
   const goNext2 = () => {
     if(((hour-hour%10)/10==2) && counter2===3){
@@ -179,7 +159,7 @@ function  name1 () {
   // console.log(sec%10)
   slides1.forEach(
       (b1,index) => {//Setting positions
-          b1.style.top = `${(index) * 100/3}%`
+          b1.style.top = `${index * 100}%`
           // console.log(index ,sec)
       }
   )
@@ -188,14 +168,10 @@ function  name1 () {
     slides1.forEach(
         (b1) => {
             b1.style.transform = `translateY(-${counter1 * 100}%)`
-            b1.style.color = `rgb(104, 101, 101)`;
-            b1.style.fontSize = `50px`;
         }
     )
-    slides1[(counter1+1)%4].style.color = `white`;
-    slides1[(counter1+1)%4].style.fontSize = `100px`;
   }
-  const goNext1 = () =>{
+  const goNext1 = () => {
     if(counter1===2){
         counter1=-1
     }
@@ -215,6 +191,5 @@ function  name1 () {
 
   goNext1()
 }
-setInterval(name1,500);
-
+setInterval(name1,1000);
 
