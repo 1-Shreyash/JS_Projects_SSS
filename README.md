@@ -8,6 +8,17 @@ The purpose of this repository is to create a collection of CSS,and JavaScript p
 ## Credits
 This repository is a collaborative effort between Shreyash, Sahil, and Smit. If you use any third-party libraries or resources in your project, be sure to credit us in your project's README file.
 
+## Projects
+- Random color Generator
+- Digital Clock
+- Basic Dark Mode Website
+- QR Code (using QR-Code.js cdn)
+- Stop Watch
+- Color Changing Clock
+- Gradient Generator
+- TO do list
+- Weather App
+
 ## License
 This repository is licensed under the MIT license.
 
